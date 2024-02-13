@@ -21,7 +21,7 @@ app.use( cookieParser() );
 app.use( express.json() );
 /*----- cors enables back-end to entertain front-end requests -----*/
 app.use( cors({
-    origin : 'https://study-notion-3p5d.onrender.com/' ,
+    origin : [ "http://localhost:3000" , "https://study-notion-3p5d.onrender.com"] ,
     credentials : true 
 }) );
 
